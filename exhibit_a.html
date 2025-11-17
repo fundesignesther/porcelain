@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>展覽導覽音檔 - 展品名稱</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        audio {
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>展品導覽音檔 - 輕鬆播放與下載</h1>
+        
+        <audio controls>
+            <source src="[Throwing.mp3]" type="audio/mpeg">
+            您的瀏覽器不支援音頻播放。
+        </audio>
+        
+        <a href="[您的音檔名稱.mp3]" download="展品A_導覽音檔.mp3" class="download-link">
+            點擊下載音檔保存到手機
+        </a>
+    </div>
+</body>
+</html>
